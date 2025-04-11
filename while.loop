@@ -16,3 +16,20 @@ int main() {
 }
 In practice branch
 
+#include <stdio.h>
+
+int main() {
+   int num;
+   int count;
+   printf("Enter the num:");
+   scanf("%d",&num);
+   count=1;
+   do{
+       int product =num*count;
+       printf("%d*%d=%d\n",num,count,product);
+        count+=1;
+   }while(count<=10);
+  
+
+    return 0;
+}
