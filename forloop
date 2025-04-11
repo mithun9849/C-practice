@@ -1,0 +1,32 @@
+ #include <stdio.h>
+
+int main() {
+    int pin;
+    float balance = 1000.0;  // Example balance
+    float transc;
+
+    for (int i = 0; i < 3; i++) {
+        printf("Enter your pin: ");
+        scanf("%d", &pin);
+
+        if (pin == 1234) {
+            printf("Enter transaction amount: ");
+            scanf("%f", &transc);
+
+            if (transc > balance){
+                printf("Not enough balance\n");
+            } 
+            else {
+                balance -= transc;
+                printf("Transaction successful. Remaining balance: %.2f\n", balance);
+            }
+            break; // exit loop after successful pin
+        } else {
+            printf("Invalid PIN! Try again.\n");
+        }
+    }
+
+
+    return 0;
+}
+
