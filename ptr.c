@@ -24,3 +24,20 @@ int main() {
 }
 
 
+#include <stdio.h>
+int* multi(int* num1,int* num2,int* product){
+    *product = (*num1) * (*num2);
+    return product;
+}
+
+
+int main() {
+    int product;
+    int num1=3;
+    int num2=5;
+    int* result = multi(&num1,&num2,&product);
+    printf("Product is %d",*result);
+    return 0;
+}
+
+
