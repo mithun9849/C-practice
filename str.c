@@ -27,3 +27,18 @@ int main() {
 
     return 0;
 }
+
+
+#include <stdio.h>
+#include<string.h>
+
+int main() {
+    char str[]="Mithun";
+    printf("%s",str);
+    printf("\nlength is %zu",strlen(str));
+   
+    
+    
+
+    return 0;
+}
